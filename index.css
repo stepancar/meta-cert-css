@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFE6E6;
+    font-family: 'Markazi Text', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    margin: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar img {
+    height: auto;
+    width: 8rem;
+}
+
+.navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    list-style-type: none;
+    display: inline;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.navbar li a {
+    font-family: "Markazi Text", serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.navbar li a:link {
+    color: #D0604C;
+}
+
+.navbar li a:hover {
+    color: #FFFFFF!important;
+    text-shadow: 2px 2px 8px hwb(60 66% 8%);
+}
+
+.navbar li a:active {
+    color: #D0604C;
+    background-color: #7F8487;
+}
+
+.navbar li a:visited {
+    color: #D0604C;
+}
+
+main {
+    margin: 1.5rem;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+    padding: 1rem;
+    margin: 0.75rem;
+}
+
+.promotion {
+    position: relative;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promotion::before {
+    content: "";
+    background-image: url("../images/Artboard 22.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.promotion article h1, .promotion article p {
+    position: relative;
+    color: black;  
+    line-height: 0.9;
+    text-align: center;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.promotion article h1 {
+    margin-bottom: 0;
+    text-shadow: 5px 5px 8px #f8bdbd;
+}
+
+.promotion article p {
+    font-size: 23px;
+    text-shadow: 2px 2px 8px white;
+}
+
+.infos {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.infos > article {
+    background-color: #D0604C;
+    border-radius: 20px;
+}
+
+article img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+
+article p + div {
+    display: flex;
+    flex: 1;
+    gap: 2rem 1rem;
+}
+
+article a:link {
+    color: #ecf4b3;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+article a:hover {
+    text-shadow: 2px 2px 8px hwb(60 66% 8%);
+    text-decoration: underline;
+}
+
+article a:active {
+    color: #ecf4b3;
+    background-color: #7F8487;
+}
+
+
+
+footer {
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer div {
+    background-color: #323232;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+footer img {
+    width: 8rem;
+    height: auto;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
